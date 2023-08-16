@@ -1,0 +1,19 @@
+The toTitleCase function converts a given name string to title case. Let me explain the steps inside the function:
+
+name.toLowerCase(): This converts the entire name string to lowercase. This is done to ensure that the resulting title case string has only the first letter of each word capitalized, while the rest of the letters remain lowercase.
+
+name.split(" "): This splits the lowercase name string into an array of words using the space character as the separator. Each word is now an element in the words array.
+
+Inside the for loop, we iterate over each element (word) in the words array.
+
+words[i].charAt(0).toUpperCase(): This part takes the first character of the current word (words[i]), converts it to uppercase using toUpperCase(), and returns the capitalized first letter.
+
+words[i].slice(1): This extracts the rest of the lowercase letters in the current word, starting from the second character (index 1) until the end of the word.
+
+The + operator concatenates the capitalized first letter with the rest of the lowercase letters in the current word.
+
+The updated word is then assigned back to the words[i] element, effectively replacing the original lowercase word with the title case version.
+
+Finally, words.join(" ") joins all the elements in the words array back into a single string, separated by spaces. This results in the complete title case string, which is then returned from the function.
+
+So, the slice(1) is used to remove the first character (which is now capitalized) from each word, leaving only the rest of the characters (which remain lowercase) to form the title case string.
