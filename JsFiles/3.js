@@ -1,5 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+let First_Name;
+First_Name = "Umair arshad";
+let UperCaseString;
+let LowerCaseString;
+let TitleCaseString;
+UperCaseString = First_Name.toUpperCase();
+LowerCaseString = First_Name.toLowerCase();
+//TitleCaseString =First_Name.to
+console.log(UperCaseString);
+console.log(LowerCaseString);
 // function toTitleCase(name: string): string {
 //   const words = name.toLowerCase().split(" ");
 //   for (let i = 0; i < words.length; i++) {
