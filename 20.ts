@@ -1,11 +1,16 @@
-// Define an array to store a list of countries
-const countries: string[] = ["USA", "Canada", "Germany", "Japan", "Australia"];
+let mountains = ["K2", "Everest", "Nagaparbat"];
+let rivers =["Ravi", "Jehlam", "Chnab", "Sindh"];
 
-// Print the list of countries
-console.log("List of Countries:");
-countries.forEach(country => {
-    console.log(country);
-});
+for (let i = 0; i < mountains.length; i++) {
+    const element = mountains[i];
+    console.log(`${element} is a great mountain`);
+    
+    
+}
+for(let i of rivers){
+    console.log(i);
+}
+
 
 
 

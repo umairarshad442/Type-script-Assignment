@@ -6,3 +6,4 @@ Friend_name="Eric";
 let message :string;
 message = `Hello ${Friend_name}, Would you like to learn some python today?`;
 console.log(message);
+ 
